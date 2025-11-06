@@ -1,4 +1,4 @@
-public class Solution {
+class Solution{
     public int[] searchRange(int[] nums, int target) {
         int first = findBound(nums, target, true);
         int last = findBound(nums, target, false);
