@@ -15,8 +15,7 @@ class Solution {
                 if (stack.isEmpty()) {
                     // no base: this ')' can't be matched; set new base
                     stack.push(i);
-                } else {
-                    // valid substring length = current index - last unmatched index
+         
                     maxLen = Math.max(maxLen, i - stack.peek());
                 }
             }
